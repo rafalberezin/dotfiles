@@ -1,0 +1,6 @@
+**/.ssh/*
+!**/.ssh/config
+
+**/gnupg/*
+!**/gnupg/gpg-agent.conf
+

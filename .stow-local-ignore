@@ -1,0 +1,12 @@
+^\.stow-local-ignore$
+
+^\.git$
+^\.gitignore$
+^\.gitattributes$
+
+^/README(\..*)?$
+^/LICENSE(\..*)?$
+
+^/scripts$
+^/global_zshenv$
+

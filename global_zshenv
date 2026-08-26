@@ -1,0 +1,7 @@
+BASE="$HOME/.config/environment.d/10-base.conf"
+if [[ -e "$BASE" ]]; then
+	set -a
+	source "$BASE"
+	set +a
+fi
+

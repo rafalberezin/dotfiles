@@ -1,0 +1,21 @@
+[init]
+	defaultBranch = master
+
+[core]
+	editor = nvim
+
+[user]
+	name = Rafał Berezin
+	email = me@rafalberezin.dev
+	signingkey = ED17BAB51BADF849
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = gpg
+
+[alias]
+	l = log --oneline -n 10
+	s = status
+
