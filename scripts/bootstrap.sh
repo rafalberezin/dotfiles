@@ -6,6 +6,7 @@ GIT_REMOTE="https://github.com/rafalberezin/dotfiles.git"
 DOTFILES_DIR="$HOME/dotfiles"
 IGNORE_DIRS=(.git scripts)
 GLOBAL_ZSHENV=("/etc/zsh/zshenv")
+NO_LINK_DIRS=("$HOME/.local/bin" "$HOME/.local/share" "$HOME/.local/state")
 
 USAGE_PATH="$0"
 usage() {
@@ -161,6 +162,9 @@ if $BACKUP; then
 fi
 
 info "stowing dotfiles"
+for TARGET in $NO_LINK_DIRS; do
+	mkdir -p "$TARGET"
+done
 stow $STOW_TARGETS
 
 if $GLOBAL; then
