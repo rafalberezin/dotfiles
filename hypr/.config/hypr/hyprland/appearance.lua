@@ -21,3 +21,5 @@ hl.window_rule({
 	border_color = "rgba(ff0000ff)",
 })
 
+hl.animation({ leaf = "global", enabled = false })
+
