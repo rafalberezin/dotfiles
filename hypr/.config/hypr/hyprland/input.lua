@@ -5,4 +5,8 @@ hl.config({
 		accel_profile = "flat",
 		repeat_delay  = 250,
 	},
+
+	cursor = {
+		no_warps = true,
+	},
 })
