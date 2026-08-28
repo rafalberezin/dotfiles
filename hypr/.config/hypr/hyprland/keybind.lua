@@ -22,6 +22,9 @@ for i = 1, #arrows do
 	hl.bind(mainMod .. " + SHIFT + " .. arrow,  hl.dsp.window.swap({ direction = arrow }))
 end
 
+hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + S", hl.dsp.layout("swapsplit"))
+
 -- Switch workspaces ( mainMod + [0-9] )
 -- Move window to workspace ( mainMod + SHIFT + [0-9] )
 for i = 1, 10 do
